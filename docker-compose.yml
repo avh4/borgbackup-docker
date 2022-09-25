@@ -1,0 +1,12 @@
+---
+version: "2.1"
+services:
+  dev:
+    build:
+      context: .
+    volumes:
+      - ./test-data/config:/config
+      - ./test-data/remote:/data
+    ports:
+      - "38592:2222"
+
